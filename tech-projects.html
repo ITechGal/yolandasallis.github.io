@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Support Projects | Yolanda Sallis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <div class="logo">YS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tech-projects.html" class="active">Technical Support</a>
+      <a href="boutique-projects.html">Boutique Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1>Technical Support Portfolio</h1>
+      <p class="subtitle">
+        Ticket management, knowledge base content, and customer-first support examples.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-border" id="ticket-dashboard">
+    <div class="container">
+      <h2>Ticket Dashboard Simulation</h2>
+      <p>
+        This sample dashboard represents a typical day in a support queue,
+        including channels, priorities, and SLA-aware statuses.
+      </p>
+
+      <div class="cards three metric-row">
+        <article class="card metric">
+          <h3>32</h3>
+          <p>Tickets today</p>
+        </article>
+        <article class="card metric">
+          <h3>18 min</h3>
+          <p>Avg. first response</p>
+        </article>
+        <article class="card metric">
+          <h3>92%</h3>
+          <p>Same-day resolution</p>
+        </article>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="ticket-table">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Channel</th>
+            <th>Customer</th>
+            <th>Category</th>
+            <th>Priority</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>#1043</td>
+            <td>Email</td>
+            <td>A. Johnson</td>
+            <td>Login issue</td>
+            <td>High</td>
+            <td><span class="status open">Open</span></td>
+          </tr>
+          <tr>
+            <td>#1044</td>
+            <td>Chat</td>
+            <td>M. Davis</td>
+            <td>Payment error</td>
+            <td>Urgent</td>
+            <td><span class="status pending">Pending customer</span></td>
+          </tr>
+          <tr>
+            <td>#1045</td>
+            <td>Phone</td>
+            <td>S. Lee</td>
+            <td>Device setup</td>
+            <td>Medium</td>
+            <td><span class="status in-progress">In progress</span></td>
+          </tr>
+          <tr>
+            <td>#1046</td>
+            <td>Email</td>
+            <td>L. Gomez</td>
+            <td>Shipping question</td>
+            <td>Low</td>
+            <td><span class="status closed">Resolved</span></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">
+        I use queues and tags to group tickets by category, then prioritize by
+        urgency and customer impact. Notes and internal comments are used to
+        keep hand-offs clear.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="kb">
+    <div class="container">
+      <h2>Knowledge Base Articles</h2>
+      <p>
+        Short, clear articles help Tier 1 agents and customers solve issues
+        without waiting for a call or chat.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h3>How to Reset Your Password</h3>
+          <p>Step-by-step guide with screenshots and password rules.</p>
+        </article>
+        <article class="card">
+          <h3>Wi-Fi Not Connecting – Quick Troubleshooting</h3>
+          <p>Checklist for signal, device, and router checks.</p>
+        </article>
+        <article class="card">
+          <h3>How to Clear Browser Cache</h3>
+          <p>Instructions for Chrome, Safari, and Edge.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-border">
+    <div class="container">
+      <h2>Live Chat Support Scenarios</h2>
+      <p>
+        Example chat flow demonstrating greeting, probing
+        questions, troubleshooting, and closing.
+      </p>
+
+      <div class="chat-example">
+        <p><strong>Customer:</strong> Hi, I can’t log into my account.</p>
+        <p><strong>Yolanda:</strong> Hi! I’m happy to help. Are you seeing an error message when you try to sign in?</p>
+        <p><strong>Customer:</strong> Yes, it says “account not found.”</p>
+        <p><strong>Yolanda:</strong> Thank you. I’ll first confirm the email on your account. Can you please verify the email you’re using to sign in?</p>
+        <p class="chat-note">…conversation continues through verification, reset link, and confirmation…</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Yolanda Sallis · Technical Support</p>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
