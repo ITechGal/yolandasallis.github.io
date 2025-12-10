@@ -1,305 +1,170 @@
-/* Minimal black/white portfolio styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* --- Melanin Rose branding + mockups --- */
+
+/* Brand colors */
+:root {
+  --melanin-red: #e11b22;
+  --melanin-gold: #d8a441;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #111;
-  background: #ffffff;
-}
-
-body {
-  line-height: 1.6;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-}
-
-.site-header {
-  border-bottom: 1px solid #e5e5e5;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-}
-
-.logo {
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-nav a {
-  margin-left: 1.25rem;
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-nav a.active {
-  opacity: 1;
-  font-weight: 600;
-}
-
-.hero {
-  padding: 3.5rem 0 2.5rem;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.hero-container {
-  max-width: 720px;
-}
-
-.eyebrow {
-  text-transform: uppercase;
+/* Branded tag / chip */
+.melanin-chip {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
   font-size: 0.75rem;
-  letter-spacing: 0.13em;
-  opacity: 0.6;
-}
-
-h1 {
-  font-size: 2.4rem;
-  margin: 0.25rem 0 0.6rem;
-}
-
-.subtitle {
-  font-size: 1.05rem;
-  margin-bottom: 0.8rem;
-  opacity: 0.8;
-}
-
-.hero-text {
-  font-size: 0.98rem;
-  max-width: 36rem;
-}
-
-.hero-actions {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.btn {
-  border: 1px solid #111;
-  padding: 0.55rem 1.25rem;
-  font-size: 0.9rem;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn.primary {
-  background: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--melanin-red), var(--melanin-gold));
   color: #fff;
 }
 
-.section {
-  padding: 2.5rem 0;
-}
-
-.section-border {
-  border-top: 1px solid #f0f0f0;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.6rem;
-}
-
-h3 {
-  font-size: 1.05rem;
-  margin: 0 0 0.4rem;
-}
-
-.two-col {
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-  gap: 2rem;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1.25rem;
-}
-
-.cards.two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.cards.three {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.card {
+/* Generic mockup card */
+.mockup-card {
+  border-radius: 8px;
   border: 1px solid #e5e5e5;
+  background: #ffffff;
   padding: 1rem 1.1rem;
-  background: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
-.key-facts ul,
-.card ul {
-  padding-left: 1.1rem;
-}
-
-.inline-link {
-  font-size: 0.85rem;
-  text-decoration: underline;
-}
-
-/* metrics */
-.metric-row {
-  margin: 1.25rem 0;
-}
-
-.metric {
-  text-align: center;
-}
-
-.metric h3 {
-  font-size: 1.6rem;
-  margin-bottom: 0.15rem;
-}
-
-.metric p {
-  font-size: 0.8rem;
+.mockup-label {
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-/* tables */
-.table-wrapper {
-  margin-top: 1.5rem;
-  overflow-x: auto;
-}
-
-.ticket-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
-}
-
-.ticket-table th,
-.ticket-table td {
-  border: 1px solid #e5e5e5;
-  padding: 0.5rem 0.6rem;
-  text-align: left;
-}
-
-.ticket-table th {
-  background: #fafafa;
-  font-weight: 600;
-}
-
-/* status tags */
-.status {
-  padding: 0.1rem 0.4rem;
-  border-radius: 999px;
-  border: 1px solid #ccc;
-  font-size: 0.75rem;
-}
-
-.status.closed { opacity: 0.6; }
-
-/* chat example */
-.chat-example {
-  border: 1px solid #e5e5e5;
-  padding: 1rem 1.1rem;
-  background: #fafafa;
-  font-size: 0.9rem;
-}
-
-.chat-note {
-  font-style: italic;
+  letter-spacing: 0.16em;
   opacity: 0.7;
 }
 
-/* contact */
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.7rem 0 0;
+/* Tech dashboard mockup */
+.dashboard-bar-row {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.6rem;
 }
 
-.contact-list li {
-  margin-bottom: 0.4rem;
+.dashboard-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: #e5e5e5;
+  overflow: hidden;
 }
 
-.qr-box {
+.dashboard-bar-fill {
+  height: 100%;
+  width: 65%;
+  background: linear-gradient(90deg, var(--melanin-red), var(--melanin-gold));
+}
+
+/* Simple ticket list mockup */
+.ticket-list {
+  margin-top: 0.7rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.ticket-row span {
+  opacity: 0.85;
+}
+
+.ticket-pill {
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.7rem;
+  border: 1px solid #ddd;
+}
+
+/* Social media mockup */
+.social-mockup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-card {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #ffffff;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.qr-label {
+.social-header {
+  padding: 0.5rem 0.7rem;
   font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.qr-placeholder {
-  width: 150px;
-  height: 150px;
-  border: 1px solid #e5e5e5;
+.social-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--melanin-red), var(--melanin-gold));
+}
+
+.social-image {
+  height: 120px;
+  background: radial-gradient(circle at top left, #fff3f3, #111);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  font-size: 0.85rem;
+  color: #fff;
 }
 
-.qr-placeholder img {
-  max-width: 100%;
-  max-height: 100%;
+.social-caption {
+  padding: 0.55rem 0.7rem 0.6rem;
+  font-size: 0.78rem;
 }
 
-/* footer */
-.site-footer {
-  border-top: 1px solid #f0f0f0;
-  padding: 1.5rem 0;
-  font-size: 0.8rem;
-  text-align: center;
-  background: #fff;
+/* Kanban / launch planning board */
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-/* responsive */
-@media (max-width: 720px) {
-  .two-col {
-    grid-template-columns: 1fr;
-  }
+.kanban-column {
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+  padding: 0.75rem;
+  font-size: 0.82rem;
+}
 
-  nav a {
-    margin-left: 0.75rem;
-  }
+.kanban-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.5rem;
+  opacity: 0.75;
+}
 
-  .hero {
-    padding-top: 2.2rem;
-  }
+.kanban-pill {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 0.35rem 0.4rem;
+  margin-bottom: 0.35rem;
+  border: 1px solid #ececec;
+}
+
+/* Small gradient header strip for Melanin Rose sections */
+.melanin-strip {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--melanin-red), var(--melanin-gold));
+  margin-bottom: 0.6rem;
 }
