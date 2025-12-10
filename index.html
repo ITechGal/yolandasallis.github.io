@@ -18,11 +18,11 @@
     </nav>
   </div>
 </header>
-
 <main>
+  <!-- HERO -->
   <section class="hero">
-    <div class="container hero-container">
-      <div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
         <p class="eyebrow">Portfolio</p>
         <h1>Yolanda Sallis</h1>
         <p class="subtitle">
@@ -31,16 +31,31 @@
         <p class="hero-text">
           I combine customer-focused tech support with organized project
           coordination for boutique brands—supporting ticket workflows,
-          documentation, and polished brand launches.
+          documentation, and polished product launches.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="tech-projects.html">View Technical Projects</a>
           <a class="btn" href="boutique-projects.html">View Boutique Projects</a>
+          <a class="btn ghost" href="assets/docs/Yolanda-Sallis-Resume.pdf" target="_blank">
+            Download Résumé
+          </a>
         </div>
       </div>
+
+      <aside class="profile-card">
+        <div class="avatar-circle">YS</div>
+        <p class="profile-name">Yolanda Sallis</p>
+        <p class="profile-role">Technical Support · Project Coordination</p>
+        <ul class="profile-tags">
+          <li>Help desk &amp; live chat</li>
+          <li>Ticketing workflows</li>
+          <li>Boutique brand launches</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
+  <!-- SUMMARY -->
   <section class="section">
     <div class="container two-col">
       <div>
@@ -65,6 +80,7 @@
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section class="section section-border">
     <div class="container">
       <h2>Skills</h2>
@@ -95,7 +111,35 @@
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
   <section class="section">
+    <div class="container">
+      <h2>Experience Highlights</h2>
+      <div class="two-col cards">
+        <article class="card">
+          <h3>Technical Support Specialist</h3>
+          <ul>
+            <li>Handle phone, email, and chat tickets for software, login, and device issues.</li>
+            <li>Use ticket queues and tags to prioritize by urgency and impact.</li>
+            <li>Create step-by-step guides for common issues to support Tier 1 resolution.</li>
+            <li>Document troubleshooting steps and escalate complex cases when needed.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Boutique Project Coordinator</h3>
+          <ul>
+            <li>Plan timelines for seasonal collections from concept to launch.</li>
+            <li>Coordinate assets: product photos, descriptions, sizing, and pricing.</li>
+            <li>Organize content calendars for launches, promos, and style inspo posts.</li>
+            <li>Monitor orders, returns, and customer messages to improve operations.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section class="section section-border">
     <div class="container">
       <h2>Featured Work</h2>
       <div class="cards three">
@@ -128,6 +172,7 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="section section-border" id="contact">
     <div class="container two-col contact">
       <div>
@@ -159,4 +204,4 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 </body>
-</html>
+</html> 
