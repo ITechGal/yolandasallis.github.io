@@ -445,7 +445,9 @@ nav a.active {
 .hero-img-mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;      /* show more of your face */
+  background-color: #070b1a; /* dark theme background fill */
+  padding: 10px;            /* optional: adds spacing so full face is visible */
 }
 
 /* === Resume Button Style === */
