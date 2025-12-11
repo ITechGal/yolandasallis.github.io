@@ -447,3 +447,20 @@ nav a.active {
   height: 100%;
   object-fit: cover;
 }
+
+/* === Resume Button Style === */
+.resume-button {
+  display: inline-block;
+  background-color: #0a84ff;   /* tech blue */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.resume-button:hover {
+  background-color: #0066cc;   /* darker hover blue */
+}
