@@ -443,11 +443,11 @@ nav a.active {
 }
 
 .hero-img-mask img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;      /* show more of your face */
-  background-color: #070b1a; /* dark theme background fill */
-  padding: 10px;            /* optional: adds spacing so full face is visible */
+  width: 115%;
+  height: 115%;
+  object-fit: cover;          /* fill the circle nicely */
+  object-position: center;    /* center your face */
+  transform: translateY(0);   /* make sure no old shifting is applied */
 }
 
 /* === Resume Button Style === */
