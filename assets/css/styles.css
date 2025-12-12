@@ -431,8 +431,8 @@ nav a.active {
   }
 /* --- HERO IMAGE MASK (YOLANDA PORTRAIT) --- */
 .hero-img-mask {
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
