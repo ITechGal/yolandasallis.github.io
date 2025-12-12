@@ -431,8 +431,8 @@ nav a.active {
   }
 /* --- HERO IMAGE MASK (YOLANDA PORTRAIT) --- */
 .hero-img-mask {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -443,8 +443,8 @@ nav a.active {
 }
 
 .hero-img-mask img {
-  width: 115%;
-  height: 115%;
+  width: 400%;
+  height: 400%;
   object-fit: cover;          /* fill the circle nicely */
   object-position: center;    /* center your face */
   transform: translateY(0);   /* make sure no old shifting is applied */
